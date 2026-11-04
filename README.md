@@ -1,23 +1,33 @@
-# kuailu-geo-prompt-map
+# Kuailu GEO Prompt Map
 
-快鹭 GEO 提示词图谱公开展示页，仓库描述为 54 条提示词。
+English public page for the Kuailu Technology GEO Prompt Map V3. It contains 37 final prompts: 17 for Kuailu KuWork and 20 for Kuailu Office, dated September 30, 2026.
 
-## 内容与本地预览
+Public page: [Kuailu GEO Prompt Map](https://yuruizhang688-cloud.github.io/kuailu-geo-prompt-map/).
 
-默认分支只有 `index.html` 1 个普通文件。
+## Content and local preview
 
-这是静态发布仓。在仓库根目录运行 `python3 -m http.server 8080 --bind 127.0.0.1`，访问 `http://127.0.0.1:8080/`。
+The page is self-contained in `index.html`, with no build step or external runtime dependencies. It includes an interactive scenario and intent map, prompt filters, methodology dialogs, and Excel export for all 37 prompts.
+
+The English translation preserves the original prompt IDs, order, scores, evidence counts, scenario mappings, and collection dates. Existing scores describe the original research; translation does not represent a new monitoring run on English prompts. The Chinese version remains available in Git history.
+
+From the repository root, run:
+
+```sh
+python3 -m http.server 8080 --bind 127.0.0.1
+```
+
+Then open [the local preview](http://127.0.0.1:8080/).
 
 <!-- repository-maintenance:begin -->
-## 维护与发布
+## Maintenance and publishing
 
-本仓独立维护；与其他业务系统之间通过已公开的 API 或固定版本包协作。运行配置与业务数据不纳入源码维护快照。
+This repository is maintained independently. Integration with other business systems uses public APIs or versioned packages. Runtime configuration and business data are excluded from source maintenance snapshots.
 
-公开入口：https://yuruizhang688-cloud.github.io/kuailu-geo-prompt-map/ 。Pages 源目录为 `main/`。
+GitHub Pages publishes the root directory of the `main` branch.
 
-日常变更先在分支提交，通过本仓验证后使用 Pull Request 合入 main。仓库保护以 GitHub 实际设置为准；个人私有仓的保护规则可能受套餐限制。Issue 用于记录缺陷与待办，缺少 Issue 不代表没有工作。
+Commit changes on a branch, validate them in this repository, and merge through a pull request. Actual branch protection is determined by the GitHub settings. Protection on personal private repositories may depend on the account plan. Issues track defects and follow-up work; an absence of issues does not imply that no work is in progress.
 
-维护快照使用 `maintenance-YYYYMMDD.N` 标签与 GitHub Release 记录源码版本；它不自动代表生产部署、真实平台验收或桌面安装包发布。Tag 发布后保持不可变，修正使用新版本。
+Maintenance snapshots use `maintenance-YYYYMMDD.N` tags and GitHub Releases to record source versions. They do not automatically signify a production deployment, platform acceptance, or desktop installer release. Published tags remain immutable; use a new version for corrections.
 
-许可范围见根目录 LICENSE；第三方代码、字体和素材保留各自许可证。不要提交 .env、Cookie、访问令牌、浏览器资料或运行数据库。
+See `LICENSE` for licensing terms. Retain third-party code, font, and asset licenses. Do not commit `.env` files, cookies, access tokens, browser profiles, or runtime databases.
 <!-- repository-maintenance:end -->
