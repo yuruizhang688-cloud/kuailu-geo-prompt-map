@@ -8,7 +8,7 @@ Public page: [Kuailu GEO Prompt Map](https://yuruizhang688-cloud.github.io/kuail
 
 The page is self-contained in `index.html`, with no build step or external runtime dependencies. It includes an interactive scenario and intent map, prompt filters, methodology dialogs, and Excel export for all 37 prompts.
 
-The English translation preserves the original prompt IDs, order, scores, evidence counts, scenario mappings, and collection dates. Existing scores describe the original research; translation does not represent a new monitoring run on English prompts. The Chinese version remains available in Git history.
+The English translation preserves the original prompt IDs, order, scores, evidence counts, scenario mappings, and collection dates. Existing scores describe the original research; translation does not represent a new monitoring run on English prompts. The Chinese version is available at [快鹭科技 GEO 提示词图谱 V3（中文版）](https://yuruizhang688-cloud.github.io/kuailu-geo-prompt-map/zh/).
 
 From the repository root, run:
 
